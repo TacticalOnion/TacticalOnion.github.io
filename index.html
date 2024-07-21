@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PabloRojas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/banner/pablo.png" type="image/png">
+</head>
+<body>
+    <header>    
+        <h1>Pablo Rojas_</h1>
+        <h2 class="montserrat-light">Data Base Administrator</h2>
+        <p>Licenciado en Informática, residente en CDMX, México.
+            Especializado en administración de bases de datos 
+            relacionales y análisis de datos.
+        </p>
+        <a href="#experience" class="button">Experiencia</a>
+        <a href="#certificates" class="button">Certificados</a>
+        <a href="#projects" class="button">Proyectos</a>
+        <a href="#contact" class="button">Contacto</a>
+    </header>
+
+    <main>
+        <section id="experience">
+            <h1>Experiencia</h1>
+
+            <div class="content-block">
+                <h2 class="title">Líder de Difusión</h2>
+                <p class="company">SIAFI</p>
+                <p class="date">Septiembre 2023-2024</p>
+                <div class="description-container">
+                    <ul class="description-list">
+                        <li>Creé el sistema de tickets de trabajo (Notion)</li>
+                        <li>Dirigí la producción de contenido de redes sociales</li>
+                        <li>Documenté la iconografía de la organización</li>
+                    </ul>
+                </div>
+                <button class="toggle-description">Leer más</button>
+            </div>
+
+            <div class="content-block">
+                <h2 class="title">3er Maratón nacional de Informática</h2>
+                <p class="company">ANFECA</p>
+                <p class="date">Octubre 2023</p>
+                <div class="description-container">
+                    <ul class="description-list">
+                        <li>Creé materiales de estudio colaborativos (guias,nemotecnias,flashcards)</li>
+                        <li>Organice sesiones de estudio grupal (a distancia,presencial)</li>
+                        <li>Motive a mi equipo durante la competición</li>    
+                    </ul>
+                </div>
+                <button class="toggle-description">Leer más</button>
+            </div>
+
+        </section>
+        
+
+        <section id="certificates">
+            <h2>Certificados</h2>
+            
+            <div class="content-block">
+                <h2 class="title">Titulo universitario</h2>
+                <p class="company">UNAM</p>
+                <p class="date">Agosto 2026</p>
+            </div>
+
+            <div class="content-block">
+                <h2 class="title">
+                    <a href="https://coursera.org/share/3fd135b7d342947e18bf3ad6de088681" 
+                    target="_blank" class="title-link">Google Cybersecurity</a>
+                </h2>
+                <p class="company">Coursera</p>
+                <p class="date">Enero 2024</p>
+                <div class="badges">Linux</div>
+                <div class="badges">SQL</div>
+                <div class="badges">Python</div>
+                <div class="badges">Wireshark</div>
+            </div>
+
+            <div class="content-block">
+                <h2 class="title">
+                    <a href="https://coursera.org/share/f5f78c8e32cd0b23ebd61392135f8e26" 
+                    target="_blank" class="title-link">Google Data Analysis</a>
+                </h2>
+                <p class="company">Coursera</p>
+                <p class="date">Octubre 2023</p>
+                <div class="badges">SQL</div>
+                <div class="badges">Python</div>
+                <div class="badges">Kaggle</div>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            
+            <div class="content-block">
+                <h2 class="title">IA juega tic tac toe</h2>
+                <p class="description">
+                    Usando algoritmos de poda negamax y alpha beta pruning programé una IA en python 
+                    que es capaz de elegir los mejores movimientos en el juego del tic tac toe.
+                </p>
+                <a href="https://github.com/TacticalOnion/TTT-AI" 
+                target="_blank" class="button-link">Git Hub</a>
+                
+            </div>
+
+            <div class="content-block">
+                <h2 class="title">IA predice la perdida de clientes</h2>
+                <p class="description">
+                    Usando los algoritmos de Decision Tree y Random Forests programé en python una IA 
+                    que predice si un cliente de un banco va a dejar el banco o no.
+                </p>
+                <a href="https://www.kaggle.com/code/pablorojashernandez/customer-churn-prediction-model" 
+                target="_blank"  class="button-link">Kaggle</a>
+            </div>
+
+            <div class="content-block">
+                <h2 class="title">Cuaderno TI</h2>
+                <p class="description">
+                    Cuaderno personal de temas de TI que estudio en mi tiempo libre.
+                </p>
+                <a href="https://github.com/TacticalOnion/CuadernoTI" 
+                target="_blank" class="button-link">Git Hub</a>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div>
+                <p class="simple-link" id="copy-email" onclick="copyToClipboard('pabloaxel.rojas@gmail.com')">pabloaxel.rojas@gmail.com</p>
+                <div id="copy-notification" class="copy-notification">Correo copiado al portapapeles</div>
+
+                <a href="https://www.linkedin.com/in/pablo-rojas-ti/"
+                target="_blank" class="simple-link">@pablo-rojas-ti</a>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script>
+
+        /*toogle description*/
+        document.addEventListener('DOMContentLoaded', () => {
+          const toggleButtons = document.querySelectorAll('.toggle-description');
+          
+          toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              const descriptionContainer = button.previousElementSibling;
+              if (descriptionContainer.style.display === 'none' || descriptionContainer.style.display === '') {
+                descriptionContainer.style.display = 'block';
+                button.textContent = 'Leer menos';
+              } else {
+                descriptionContainer.style.display = 'none';
+                button.textContent = 'Leer más';
+              }
+            });
+          });
+        });
+
+        function copyToClipboard(text) {
+            /*Notificación temporal*/
+            var tempInput = document.createElement("input");
+            tempInput.style.position = "absolute";
+            tempInput.style.left = "-9999px";
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); /*Móvil*/
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            /*Mostrar notificación*/
+            var notification = document.getElementById("copy-notification");
+            notification.style.display = "block";
+            setTimeout(function() {
+                notification.style.display = "none";
+            }, 2000);
+        }
+      </script>
+    <p class="space"></p>
+</body>
+
+<footer class="footer">
+    <p>© 2024 Pablo Rojas. Todos los derechos reservados.</p>
+</footer>
+
+</html>
