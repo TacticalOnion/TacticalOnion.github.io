@@ -29,11 +29,6 @@ body{
     
 }
 
-.space{
-    flex-grow: 1;
-    padding-bottom: 20px;
-}
-
 .footer {
     background-color: #16886b;
     color: #ffffff;
@@ -50,7 +45,9 @@ body{
 }
 
 main{
-    margin: 60px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .button {
@@ -63,7 +60,7 @@ main{
     text-decoration: none; /*Sin subrayado del enlace*/
     border-radius: 10px; /*Esquinas redondeadas*/
     font-size: 16px; /*Tamaño fuente*/
-    margin: 3px 2px;
+    margin: 4px 2px;
     transition: background-color 0.3s, color 0.3s; /* Transición al hover*/
 }
 
@@ -73,7 +70,8 @@ main{
 }
 
 .button-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 4px 8px; 
     border: 1px solid #ffffff; /*Borde*/
     background-color: transparent; /*Fondo*/
@@ -82,17 +80,49 @@ main{
     text-decoration: none; /*Sin subrayado del enlace*/
     border-radius: 5px; /*Esquinas redondeadas*/
     font-size: 10px; /*Tamaño fuente*/
-    transition: background-color 0.3s, color 0.3s; /* Transición al hover*/
+    margin: 7px 0px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Transición al hover*/
+}
+
+.button-icon {
+    width: auto;
+    height: 16px;
+    margin-right: 4px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.button-link:hover .button-icon{
+    transform: scale(1.1);
+    filter: brightness(0.2);
 }
 
 .button-link:hover {
+    transform: scale(1.1);
     background-color: #ffffff; /*Fondo*/
     color: #1e2326; /*Texto*/
 }
 
+.block{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
 .content-block{
-    margin: 30px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.content-image {
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    
 }
   
 .title {
@@ -105,6 +135,13 @@ main{
     font-weight: bold;
     color: #ffffff;
     margin: 0;
+}
+
+.company-logo{
+    width: 1.5em;
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .date {
@@ -127,6 +164,7 @@ main{
     position: relative;
     list-style-type: none; /*Eliminar bullets predeterminados*/
     padding: 0;
+    margin-left: 10px;
 }
 
 .description-list li {
@@ -146,6 +184,12 @@ main{
     height: 0.7em; /*Alto*/
     border-radius: 50%; /*Forma*/
     background-color: #16886b; /*Color*/
+}
+
+.badges-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .badges {
@@ -200,3 +244,21 @@ main{
 }
 
 
+.header-content {
+    display: flex;
+    width: 65%;
+}
+
+.banner {
+    height: 8em;
+    margin-left: 5px;
+    align-self: center;
+}
+
+.banner-text{
+    width: 65%;
+}
+
+.banner-badges{
+    width: 70%;
+}

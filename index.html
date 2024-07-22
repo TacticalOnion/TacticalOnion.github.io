@@ -1,12 +1,12 @@
 <!--TO-DO LIST
-- Agregar iconos e imagenes
+- Agregar iconos e imagenes [x]
 - Resaltar palabras clave
-- Distriuir la proporción de contenido
+- Distriuir la proporción de contenido [x]
 - Hacer la pagina responsiva
 - Hacer versión inglés (botón)
 - Crear un boton que descargue el CV en PDF
 - Documentar codigo
-- Decidir si permitir los titulos con enlaces
+- Decidir si permitir los titulos con enlaces [x]
 - Personalizar scroll
 -->
 
@@ -19,27 +19,41 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icons/banner/pablo.png" type="image/png">
 </head>
+
 <body>
+    
     <main>
-        <header>    
-            <h1>Pablo Rojas_</h1>
-            <h2 class="montserrat-light">Data Base Administrator</h2>
-            <p>Licenciado en Informática, residente en CDMX, México.
+        <header>  
+            <div class="header-content">
+                <div>
+                    <h1>Pablo Rojas_</h1>
+                    <h2 class="montserrat-light">Data Base Administrator</h2>
+                </div>
+                <img src="icons\banner\network.png" class="banner">
+            </div>
+            <p class="banner-text">Licenciado en Informática, residente en CDMX, México.
                 Especializado en administración de bases de datos 
                 relacionales y análisis de datos.
             </p>
-            <a href="#experience" class="button">Experiencia</a>
-            <a href="#certificates" class="button">Certificados</a>
-            <a href="#projects" class="button">Proyectos</a>
-            <a href="#contact" class="button">Contacto</a>
+            <div class="banner-badges">
+                <a href="#experience" class="button">Experiencia</a>
+                <a href="#certificates" class="button">Certificados</a>
+                <a href="#projects" class="button">Proyectos</a>
+                <a href="#contact" class="button">Contacto</a>
+            </div>
         </header>
         
+        
+
         <section id="experience">
             <h1>Experiencia</h1>
 
-            <div class="content-block">
+            <div class="block">
                 <h2 class="title">Líder de Difusión</h2>
-                <p class="company">SIAFI</p>
+                <p class="company">
+                    SIAFI
+                    <img src="icons\experience\siafi.png" class="company-logo">
+                </p>
                 <p class="date">Septiembre 2023-2024</p>
                 <div class="description-container">
                     <ul class="description-list">
@@ -51,18 +65,23 @@
                 <button class="toggle-description">Leer más</button>
             </div>
 
-            <div class="content-block">
-                <h2 class="title">3er Maratón nacional de Informática</h2>
-                <p class="company">ANFECA</p>
-                <p class="date">Octubre 2023</p>
-                <div class="description-container">
-                    <ul class="description-list">
-                        <li>Creé materiales de estudio colaborativos (guias,nemotecnias,flashcards)</li>
-                        <li>Organice sesiones de estudio grupal (a distancia,presencial)</li>
-                        <li>Motive a mi equipo durante la competición</li>    
-                    </ul>
+            <div class="block">
+                <div>
+                    <h2 class="title">3er Maratón nacional de Informática</h2>
+                    <p class="company">
+                        ANFECA
+                        <img src="icons\experience\anfeca.png" class="company-logo">
+                    </p>
+                    <p class="date">Octubre 2023</p>
+                    <div class="description-container">
+                        <ul class="description-list">
+                            <li>Creé materiales de estudio colaborativos (guias,nemotecnias,flashcards)</li>
+                            <li>Organice sesiones de estudio grupal (a distancia,presencial)</li>
+                            <li>Motive a mi equipo durante la competición</li>    
+                        </ul>
+                    </div>
+                    <button class="toggle-description">Leer más</button>
                 </div>
-                <button class="toggle-description">Leer más</button>
             </div>
 
         </section>
@@ -70,92 +89,180 @@
         <section id="certificates">
             <h2>Certificados</h2>
             
-            <div class="content-block">
-                <h2 class="title">Título universitario</h2>
-                <p class="company">UNAM</p>
-                <p class="date">Agosto 2026</p>
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\certificates\university.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">Título universitario</h2>
+                        <p class="company">UNAM</p>
+                        <p class="date">Agosto 2026</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\certificates\google.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">Google Cybersecurity</h2>
+                        <p class="company">Coursera</p>
+                        <p class="date">Enero 2024</p>
+                        
+                        <div>
+                            <a href="https://coursera.org/share/3fd135b7d342947e18bf3ad6de088681" 
+                                target="_blank" class="button-link">
+                                <img src="icons/certificates/link.png" class="button-icon">
+                                Certificado
+                            </a>
+                        </div>
+
+                        <div class="badges-container">
+                            <div class="badges">Linux</div>
+                            <div class="badges">SQL</div>
+                            <div class="badges">Python</div>
+                            <div class="badges">Wireshark</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="content-block">
-                <h2 class="title">Google Cybersecurity</h2>
-                <p class="company">Coursera</p>
-                <p class="date">Enero 2024</p>
-                
-                <a href="https://coursera.org/share/3fd135b7d342947e18bf3ad6de088681" 
-                target="_blank" class="button-link">Certificado</a>
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\certificates\google.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">Google Data Analysis</h2>
+                        <p class="company">Coursera</p>
+                        <p class="date">Octubre 2023</p>
+                        
+                        <div>
+                            <a href="https://coursera.org/share/f5f78c8e32cd0b23ebd61392135f8e26" 
+                                target="_blank" class="button-link">
+                                <img src="icons/certificates/link.png" class="button-icon">
+                                Certificado
+                            </a>
+                        </div>
 
-                <div class="badges">Linux</div>
-                <div class="badges">SQL</div>
-                <div class="badges">Python</div>
-                <div class="badges">Wireshark</div>
+                        <div class="badges-container">
+                            <div class="badges">SQL</div>
+                            <div class="badges">Python</div>
+                            <div class="badges">Kaggle</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="content-block">
-                <h2 class="title">Google Data Analysis</h2>
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\experience\anfeca.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">3er Maratón nacional de Informática</h2>
+                        <p class="company">ANFECA</p>
+                        <p class="date">Octubre 2023</p>
+                        
+                        <div>
+                            <a href="https://www.linkedin.com/posts/pablo-rojas-ti_anfeca2023-maraton-activity-7119070064045129729-0CdP?utm" 
+                                target="_blank" class="button-link">
+                                <img src="icons/certificates/link.png" class="button-icon">
+                                Certificado
+                            </a>
+                        </div>
 
-                <p class="company">Coursera</p>
-                <p class="date">Octubre 2023</p>
-
-                <a href="https://coursera.org/share/f5f78c8e32cd0b23ebd61392135f8e26" 
-                target="_blank" class="button-link">Certificado</a>
-
-                <div class="badges">SQL</div>
-                <div class="badges">Python</div>
-                <div class="badges">Kaggle</div>
+                        <div class="badges-container">
+                            <div class="badges">Quizlet</div>
+                            <div class="badges">Drive</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            
         </section>
 
         <section id="projects">
             <h2>Proyectos</h2>
             
-            <div class="content-block">
-                <h2 class="title">IA juega tic tac toe</h2>
-                <p class="description">
-                    Usando algoritmos de poda negamax y alpha beta pruning programé una IA en python 
-                    que es capaz de elegir los mejores movimientos en el juego del tic tac toe.
-                </p>
-                <a href="https://github.com/TacticalOnion/TTT-AI" 
-                target="_blank" class="button-link">Git Hub</a>
-                
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\projects\tictactoe.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">IA juega tic tac toe</h2>
+                        <p class="description">
+                            Usando algoritmos de poda negamax y alpha beta pruning programé una IA en python 
+                            que es capaz de elegir los mejores movimientos en el juego del tic tac toe.
+                        </p>
+                        <div class="badges-container">
+                            <a href="https://github.com/TacticalOnion/TTT-AI" 
+                                target="_blank" class="button-link">
+                                <img src="icons\projects\github.png" class="button-icon">
+                                Git Hub
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="content-block">
-                <h2 class="title">IA predice la perdida de clientes</h2>
-                <p class="description">
-                    Usando los algoritmos de Decision Tree y Random Forests programé en python una IA 
-                    que predice si un cliente de un banco va a dejar el banco o no.
-                </p>
-                <a href="https://www.kaggle.com/code/pablorojashernandez/customer-churn-prediction-model" 
-                target="_blank"  class="button-link">Kaggle</a>
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\projects\exit.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">IA predice la perdida de clientes</h2>
+                        <p class="description">
+                            Usando los algoritmos de Decision Tree y Random Forests programé en python una IA 
+                            que predice si un cliente de un banco va a dejar el banco o no.
+                        </p>
+                        <div class="badges-container">
+                            <a href="https://www.kaggle.com/code/pablorojashernandez/customer-churn-prediction-model" 
+                                target="_blank" class="button-link">
+                                <img src="icons\projects\kaggle.png" class="button-icon">
+                                kaggle
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="content-block">
-                <h2 class="title">Cuaderno TI</h2>
-                <p class="description">
-                    Cuaderno personal de temas de TI que estudio en mi tiempo libre.
-                </p>
-                <a href="https://github.com/TacticalOnion/CuadernoTI" 
-                target="_blank" class="button-link">Git Hub</a>
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\projects\notebook.png" class="content-image">
+                    <div class="text-content">
+                        <h2 class="title">Cuaderno TI</h2>
+                        <p class="description">
+                            Cuaderno personal de temas de TI que estudio en mi tiempo libre.
+                        </p>
+                        <div class="badges-container">
+                            <a href="https://github.com/TacticalOnion/CuadernoTI" 
+                                target="_blank" class="button-link">
+                                <img src="icons\projects\github.png" class="button-icon">
+                                Git Hub
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
 
         <section id="contact">
             <h2>Contacto</h2>
-            <div class="content-block">
-                <div>
+            <div class="block">
+                <div class="content-block">
+                    <img src="icons\contact\mail.png" class="company-logo">
                     <p class="simple-link" id="copy-email" onclick="copyToClipboard('pabloaxel.rojas@gmail.com')">pabloaxel.rojas@gmail.com</p>
                     <div id="copy-notification" class="copy-notification">Correo copiado al portapapeles</div>
-    
+                </div>
+
+                <div class="content-block">
+                    <img src="icons\contact\linkedin.png" class="company-logo">
                     <a href="https://www.linkedin.com/in/pablo-rojas-ti/"
                     target="_blank" class="simple-link">@pablo-rojas-ti</a>
                 </div>
             </div>
         </section>
-
-        
     </main>
+
+    <footer class="footer">
+        <p>© 2024 Pablo Rojas. Todos los derechos reservados.</p>
+    </footer>
 
     <script>
 
@@ -198,12 +305,8 @@
         }
       </script>
 
-    <p class="space"></p>
-
 </body>
 
-<footer class="footer">
-    <p>© 2024 Pablo Rojas. Todos los derechos reservados.</p>
-</footer>
+
 
 </html>
