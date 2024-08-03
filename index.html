@@ -1,261 +1,252 @@
-<!--TO-DO LIST
-- Agregar iconos e imagenes [x]
-- Resaltar palabras clave
-- Distriuir la proporción de contenido [x]
-- Hacer la pagina responsiva
-- Hacer versión inglés (botón)
-- Crear un boton que descargue el CV en PDF
-- Documentar codigo
-- Decidir si permitir los titulos con enlaces [x]
-- Personalizar scroll
--->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PabloRojas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icons/banner/pablo.png" type="image/png">
+    <link rel="stylesheet" href="styles-two.css">
+    <link rel="icon" href="icons/page/pablo.png" type="image/png">
 </head>
 
 <body>
-    
+    <div class="background" id="particles-js"></div>
+    <header> 
+        <div class="profile" >
+            <h1 class="name">Pablo Rojas_</h1>
+            <p class="rol">Data Base Administrator</p>
+        </div>
+        <p class="bio">
+            Licenciado en Informática, residente en CDMX, México. 
+            Especializado en administración de bases de datos 
+            relacionales y análisis de datos.
+        </p>
+        <a href="#experience" class="button">Experiencia</a>
+        <a href="#certificates" class="button">Certificados</a>
+        <a href="#projects" class="button">Proyectos</a>
+        <a href="#contact" class="button">Contacto</a>
+
+        <div class="actions-container">
+            <div class="action-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggleBackground" checked>
+                    <span class="slider"></span>
+                </label>
+                <span class="switch-label">Animación</span>
+            </div>
+
+            <div class="action-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggleDark">
+                    <span class="slider"></span>
+                  </label>
+                  <span class="switch-label">Modo claro</span>
+            </div>
+              
+
+        </div>
+
+    </header>
     <main>
-        <header>  
-            <div class="header-content">
-                <div>
-                    <h1>Pablo Rojas_</h1>
-                    <h2 class="montserrat-light">Data Base Administrator</h2>
-                </div>
-                <img src="icons\banner\network.png" class="banner">
-            </div>
-            <p class="banner-text">Licenciado en Informática, residente en CDMX, México.
-                Especializado en administración de bases de datos 
-                relacionales y análisis de datos.
-            </p>
-            <div class="banner-badges">
-                <a href="#experience" class="button">Experiencia</a>
-                <a href="#certificates" class="button">Certificados</a>
-                <a href="#projects" class="button">Proyectos</a>
-                <a href="#contact" class="button">Contacto</a>
-            </div>
-        </header>
-        
-        
-
+        <!--Experiencia-->
         <section id="experience">
-            <h1>Experiencia</h1>
-
+            <h1 class="section-title">Experiencia</h1>
+            <!--SIAFI : Lider de difusión-->
             <div class="block">
-                <h2 class="title">Líder de Difusión</h2>
+                <h2 class="block-title">Líder de Difusión</h2>
                 <p class="company">
                     SIAFI
                     <img src="icons\experience\siafi.png" class="company-logo">
                 </p>
                 <p class="date">Septiembre 2023-2024</p>
                 <div class="description-container">
-                    <ul class="description-list">
+                    <ul class="list">
                         <li>Creé el sistema de tickets de trabajo (Notion)</li>
                         <li>Dirigí la producción de contenido de redes sociales</li>
                         <li>Documenté la iconografía de la organización</li>
+                        <li>Diseñé del merchandaising (camisas, gorras, stickers, hoodies)</li>
+                        <li>Diseñe los flyers de los eventos principales</li>
                     </ul>
                 </div>
                 <button class="toggle-description">Leer más</button>
             </div>
 
+            <!--ANFECA : Maraton nacional de informatica-->
             <div class="block">
-                <div>
-                    <h2 class="title">3er Maratón nacional de Informática</h2>
-                    <p class="company">
-                        ANFECA
-                        <img src="icons\experience\anfeca.png" class="company-logo">
-                    </p>
-                    <p class="date">Octubre 2023</p>
-                    <div class="description-container">
-                        <ul class="description-list">
-                            <li>Creé materiales de estudio colaborativos (guias,nemotecnias,flashcards)</li>
-                            <li>Organice sesiones de estudio grupal (a distancia,presencial)</li>
-                            <li>Motive a mi equipo durante la competición</li>    
-                        </ul>
-                    </div>
-                    <button class="toggle-description">Leer más</button>
+                <h2 class="block-title">Maratón nacional de Informática (3er lugar)</h2>
+                <p class="company">
+                    ANFECA
+                    <img src="icons\experience\anfeca.png" class="company-logo">
+                </p>
+                <p class="date">Octubre 2023</p>
+                <div class="description-container">
+                    <ul class="list">
+                        <li>Creé materiales de estudio colaborativos (guias,nemotecnias,flashcards)</li>
+                        <li>Organice sesiones de estudio grupal (a distancia,presencial)</li>
+                        <li>Motive a mi equipo durante la competición</li> 
+                    </ul>
                 </div>
+                <button class="toggle-description">Leer más</button>
             </div>
-
         </section>
-        
+
+        <!--Certificados-->
         <section id="certificates">
-            <h2>Certificados</h2>
-            
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\certificates\university.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">Título universitario</h2>
-                        <p class="company">UNAM</p>
-                        <p class="date">Agosto 2026</p>
-                    </div>
+            <h1 class="section-title">Certificados</h1>
+
+            <!--Titulo universitario-->
+            <div class="certificate">
+                <img src="icons\certificates\university.png" class="logo">
+                <div class="block-text">
+                    <h2 class="block-title">Título universitario</h2>
+                <p class="company">UNAM</p>
+                <p class="date">Agosto 2026</p>
                 </div>
             </div>
             
-
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\certificates\google.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">Google Cybersecurity</h2>
-                        <p class="company">Coursera</p>
-                        <p class="date">Enero 2024</p>
-                        
-                        <div>
-                            <a href="https://coursera.org/share/3fd135b7d342947e18bf3ad6de088681" 
-                                target="_blank" class="button-link">
-                                <img src="icons/certificates/link.png" class="button-icon">
-                                Certificado
-                            </a>
-                        </div>
-
-                        <div class="badges-container">
-                            <div class="badges">Linux</div>
-                            <div class="badges">SQL</div>
-                            <div class="badges">Python</div>
-                            <div class="badges">Wireshark</div>
-                        </div>
+            <!--Google : Ciberseguridad-->
+            <div class="certificate">
+                <img src="icons\certificates\google.png" class="logo">
+                <div class="block-text">
+                    <h2 class="block-title">Google Cybersecurity</h2>
+                    <p class="company">COURSERA</p>
+                    <p class="date">Enero 2024</p>
+                    <div>
+                        <a href="https://coursera.org/share/3fd135b7d342947e18bf3ad6de088681" 
+                            target="_blank" class="button-link">
+                            <img src="icons/certificates/link.png" class="button-icon">
+                            Certificado
+                        </a>
                     </div>
-                </div>
+                    <div class="badges-container">
+                        <div class="badges">Linux</div>
+                        <div class="badges">SQL</div>
+                        <div class="badges">Python</div>
+                        <div class="badges">Wireshark</div>
+                    </div>
+                </div> 
             </div>
 
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\certificates\google.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">Google Data Analysis</h2>
-                        <p class="company">Coursera</p>
-                        <p class="date">Octubre 2023</p>
-                        
-                        <div>
-                            <a href="https://coursera.org/share/f5f78c8e32cd0b23ebd61392135f8e26" 
-                                target="_blank" class="button-link">
-                                <img src="icons/certificates/link.png" class="button-icon">
-                                Certificado
-                            </a>
-                        </div>
-
-                        <div class="badges-container">
-                            <div class="badges">SQL</div>
-                            <div class="badges">Python</div>
-                            <div class="badges">Kaggle</div>
-                        </div>
+            <!--Google : Data Analyst-->
+            <div class="certificate">
+                <img src="icons\certificates\google.png" class="logo">
+                <div class="block-text">
+                    <h2 class="block-title">Google Data Analysis</h2>
+                    <p class="company">COURSERA</p>
+                    <p class="date">Octubre 2023</p>
+                    <div>
+                        <a href="https://coursera.org/share/f5f78c8e32cd0b23ebd61392135f8e26" 
+                            target="_blank" class="button-link">
+                            <img src="icons/certificates/link.png" class="button-icon">
+                            Certificado
+                        </a>
                     </div>
-                </div>
+                    <div class="badges-container">
+                        <div class="badges">SQL</div>
+                        <div class="badges">Python</div>
+                        <div class="badges">Kaggle</div>
+                    </div>
+                </div> 
             </div>
 
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\experience\anfeca.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">3er Maratón nacional de Informática</h2>
-                        <p class="company">ANFECA</p>
-                        <p class="date">Octubre 2023</p>
-                        
-                        <div>
-                            <a href="https://www.linkedin.com/posts/pablo-rojas-ti_anfeca2023-maraton-activity-7119070064045129729-0CdP?utm" 
-                                target="_blank" class="button-link">
-                                <img src="icons/certificates/link.png" class="button-icon">
-                                Certificado
-                            </a>
-                        </div>
-
-                        <div class="badges-container">
-                            <div class="badges">Quizlet</div>
-                            <div class="badges">Drive</div>
-                        </div>
+            <!--ANFECA : Maraton nacional de informatica-->
+            <div class="certificate">
+                <img src="icons\certificates\anfeca.png" class="logo">
+                <div class="block-text">
+                    <h2 class="block-title">Maratón nacional de Informática</h2>
+                    <p class="company">ANFECA</p>
+                    <p class="date">Octubre 2023</p>
+                    <div>
+                        <a href="https://www.linkedin.com/posts/pablo-rojas-ti_anfeca2023-maraton-activity-7119070064045129729-0CdP?utm" 
+                            target="_blank" class="button-link">
+                            <img src="icons/certificates/link.png" class="button-icon">
+                            Certificado
+                        </a>
                     </div>
-                </div>
+                    <div class="badges-container">
+                        <div class="badges">Quizlet</div>
+                        <div class="badges">Drive</div>
+                    </div>
+                </div> 
             </div>
             
         </section>
 
+        <!--Proyectos-->
         <section id="projects">
-            <h2>Proyectos</h2>
-            
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\projects\tictactoe.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">IA juega tic tac toe</h2>
-                        <p class="description">
-                            Usando algoritmos de poda negamax y alpha beta pruning programé una IA en python 
-                            que es capaz de elegir los mejores movimientos en el juego del tic tac toe.
-                        </p>
-                        <div class="badges-container">
-                            <a href="https://github.com/TacticalOnion/TTT-AI" 
-                                target="_blank" class="button-link">
-                                <img src="icons\projects\github.png" class="button-icon">
-                                Git Hub
-                            </a>
-                        </div>
+            <h1 class="section-title">Proyectos</h1>
+
+            <!--TicTacToe-->
+            <div class="project">
+                <img src="icons\projects\tictactoe.png" class="logo">
+                <div class="block-text">
+                    <h2 class="block-title">IA juega tic tac toe</h2>
+                    <p class="description">
+                        Usando algoritmos de poda negamax y alpha beta pruning programé una IA en python 
+                        que es capaz de elegir los mejores movimientos en el juego del tic tac toe.
+                    </p>
+                    <div>
+                        <a href="https://github.com/TacticalOnion/TTT-AI" 
+                            target="_blank" class="button-link">
+                            <img src="icons\projects\github.png" class="button-icon">
+                            Git Hub
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--Customer churn-->
+            <div class="project">
+                <img src="icons\projects\exit.png" class="logo">
+                <div class="block-text">
+                    <h2 class="block-title">IA predice la perdida de clientes</h2>
+                    <p class="description">
+                        Usando los algoritmos de Decision Tree y Random Forests programé en python una IA 
+                        que predice si un cliente de un banco va a dejar el banco o no.
+                    </p>
+                    <div>
+                        <a href="https://www.kaggle.com/code/pablorojashernandez/customer-churn-prediction-model" 
+                            target="_blank" class="button-link">
+                            <img src="icons\projects\kaggle.png" class="button-icon">
+                            kaggle
+                        </a>                    
                     </div>
                 </div>
             </div>
 
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\projects\exit.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">IA predice la perdida de clientes</h2>
-                        <p class="description">
-                            Usando los algoritmos de Decision Tree y Random Forests programé en python una IA 
-                            que predice si un cliente de un banco va a dejar el banco o no.
-                        </p>
-                        <div class="badges-container">
-                            <a href="https://www.kaggle.com/code/pablorojashernandez/customer-churn-prediction-model" 
-                                target="_blank" class="button-link">
-                                <img src="icons\projects\kaggle.png" class="button-icon">
-                                kaggle
-                            </a>
-                        </div>
-                    </div>
+        <!--Cuaderno TI-->
+        <div class="project">
+            <img src="icons\projects\notebook.png" class="logo">
+            <div class="block-text">
+                <h2 class="block-title">Cuaderno TI</h2>
+                <p class="description">
+                    Cuaderno personal de temas de TI que estudio en mi tiempo libre.
+                </p>
+                <div>
+                    <a href="https://github.com/TacticalOnion/CuadernoTI" 
+                        target="_blank" class="button-link">
+                        <img src="icons\projects\kaggle.png" class="button-icon">
+                        kaggle
+                    </a>                    
                 </div>
             </div>
-
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\projects\notebook.png" class="content-image">
-                    <div class="text-content">
-                        <h2 class="title">Cuaderno TI</h2>
-                        <p class="description">
-                            Cuaderno personal de temas de TI que estudio en mi tiempo libre.
-                        </p>
-                        <div class="badges-container">
-                            <a href="https://github.com/TacticalOnion/CuadernoTI" 
-                                target="_blank" class="button-link">
-                                <img src="icons\projects\github.png" class="button-icon">
-                                Git Hub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        </div>
+        
         </section>
 
         <section id="contact">
-            <h2>Contacto</h2>
-            <div class="block">
-                <div class="content-block">
-                    <img src="icons\contact\mail.png" class="company-logo">
-                    <p class="simple-link" id="copy-email" onclick="copyToClipboard('pabloaxel.rojas@gmail.com')">pabloaxel.rojas@gmail.com</p>
-                    <div id="copy-notification" class="copy-notification">Correo copiado al portapapeles</div>
-                </div>
+            <h1 class="section-title">Contacto</h1>
+            
+            <div class="contact">
+                <img src="icons\contact\mail.png" class="company-logo">
+                <p class="link" id="copy-email" onclick="copyToClipboard('pabloaxel.rojas@gmail.com')">pabloaxel.rojas@gmail.com</p>
+                <div id="copy-notification" class="copy-notification">Correo copiado al portapapeles</div>
+            </div>
 
-                <div class="content-block">
-                    <img src="icons\contact\linkedin.png" class="company-logo">
-                    <a href="https://www.linkedin.com/in/pablo-rojas-ti/"
-                    target="_blank" class="simple-link">@pablo-rojas-ti</a>
-                </div>
+            <div class="contact">
+                <img src="icons\contact\linkedin.png" class="company-logo">
+                <a href="https://www.linkedin.com/in/pablo-rojas-ti/"
+                target="_blank" class="link">@pablo-rojas-ti</a>
             </div>
         </section>
     </main>
@@ -264,26 +255,42 @@
         <p>© 2024 Pablo Rojas. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 
+    <script>
+        document.getElementById('toggleBackground').addEventListener('change', function() {
+          var background = document.getElementById('particles-js');
+          if (this.checked) {
+            background.style.display = 'block';
+          } else {
+            background.style.display = 'none';
+          }
+        });
+      </script>
+      
+    <script>
         /*toogle description*/
         document.addEventListener('DOMContentLoaded', () => {
-          const toggleButtons = document.querySelectorAll('.toggle-description');
-          
-          toggleButtons.forEach(button => {
-            button.addEventListener('click', () => {
-              const descriptionContainer = button.previousElementSibling;
-              if (descriptionContainer.style.display === 'none' || descriptionContainer.style.display === '') {
-                descriptionContainer.style.display = 'block';
-                button.textContent = 'Leer menos';
-              } else {
-                descriptionContainer.style.display = 'none';
-                button.textContent = 'Leer más';
-              }
+        const toggleButtons = document.querySelectorAll('.toggle-description');
+        
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const descriptionContainer = button.previousElementSibling;
+                    if (descriptionContainer.style.display === 'none' || descriptionContainer.style.display === '') {
+                        descriptionContainer.style.display = 'block';
+                        button.textContent = 'Leer menos';
+                    } else {
+                        descriptionContainer.style.display = 'none';
+                        button.textContent = 'Leer más';
+                    }
+                });
             });
-          });
         });
+    </script>
 
+    <script>
+        /*copy to clipboard*/
         function copyToClipboard(text) {
             /*Notificación temporal*/
             var tempInput = document.createElement("input");
@@ -303,10 +310,82 @@
                 notification.style.display = "none";
             }, 2000);
         }
-      </script>
+    </script>
+
+<script>
+    document.getElementById('toggleDark').addEventListener('change', function() {
+        const background = document.querySelector('.background');
+        const html = document.querySelector('html');
+        const elements = document.querySelectorAll('body *');
+        const images = document.querySelectorAll('img');
+        const footer = document.querySelector('.footer');
+        const copyNotification = document.querySelector('.copy-notification')
+        const lists = document.querySelectorAll('.list');
+
+        if (this.checked) {
+            
+            elements.forEach(element => {
+                if(!footer.contains(element)){
+                    element.style.color = 'black';
+                }
+                
+            });
+
+            images.forEach(img => {
+                img.style.filter = 'brightness(0)';
+            });
+
+            elements.forEach(element => {
+                const style = getComputedStyle(element);
+                if (style.borderStyle !== 'none' && style.borderWidth !== '0px') {
+                    
+                    element.style.borderColor = 'black';
+                }
+            });
+
+            lists.forEach(list => {
+                list.classList.add('dark-bullets');
+            });
+
+            
+            background.classList.add('dark');
+            document.body.classList.add('dark');
+            html.classList.add('dark');
+            footer.classList.add('dark');
+            copyNotification.classList.add('dark');
+            
+        } else {
+            
+            elements.forEach(element => {
+                element.style.color = '';
+            });
+
+            images.forEach(img => {
+                img.style.filter = 'none';
+            });
+
+            elements.forEach(element => {
+                const style = getComputedStyle(element);
+                if (style.borderStyle !== 'none' && style.borderWidth !== '0px') {
+                    
+                    element.style.borderColor = '';
+                    
+                }
+            });
+
+            lists.forEach(list => {
+                list.classList.remove('dark-bullets');
+            });
+
+            background.classList.remove('dark');
+            document.body.classList.remove('dark');
+            html.classList.remove('dark');
+            footer.classList.remove('dark');
+            copyNotification.classList.remove('dark');
+        }
+    });
+</script>
+
+  
 
 </body>
-
-
-
-</html>
